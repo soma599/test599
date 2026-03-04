@@ -1,18 +1,26 @@
 {
   "name": "test-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "uni-app 微信小程序项目",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:h5": "uni",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:h5": "uni build",
+    "build:mp-weixin": "uni build -p mp-weixin"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "vue": "^3.5.18"
+  },
   "devDependencies": {
+    "@dcloudio/vite-plugin-uni": "^5.0.0",
     "autoprefixer": "^10.4.24",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.19",
+    "vite": "^5.4.19",
     "weapp-tailwindcss": "^4.9.2"
   }
 }
