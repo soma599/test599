@@ -1,10 +1,10 @@
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<image class="logo" src="/static/logo.png" mode="aspectFit"></image>
 		<view class="text-area">
-			<text class="title">{{ title }}1</text>
+			<text class="title">{{ title }}</text>
 		</view>
-		<view class="w-[100rpx] h-[100rpx] bg-[red]">88888888888888</view>
+		<view class="demo-box">Tailwind + uni-app 已启用</view>
 	</view>
 </template>
 
@@ -14,12 +14,6 @@ export default {
 		return {
 			title: 'Hello'
 		}
-	},
-	onLoad() {
-
-	},
-	methods: {
-
 	}
 }
 </script>
@@ -49,5 +43,14 @@ export default {
 .title {
 	font-size: 36rpx;
 	color: #8f8f94;
+}
+
+.demo-box {
+	margin-top: 24rpx;
+	padding: 20rpx 24rpx;
+	background-color: #ef4444;
+	color: #ffffff;
+	font-size: 28rpx;
+	border-radius: 12rpx;
 }
 </style>
